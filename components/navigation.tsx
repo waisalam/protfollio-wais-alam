@@ -12,15 +12,15 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background border-b border-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16 md:h-20">
           <Link
             href="/"
-            className="text-3xl font-bold text-foreground tracking-wider"
+            className="text-2xl md:text-3xl font-bold text-foreground tracking-wider"
           >
             W.
           </Link>
 
-          <div className="flex gap-8">
+          <div className="flex gap-2 sm:gap-4 md:gap-8">
             {[
               { href: '/', label: 'HOME' },
               { href: '/about', label: 'ABOUT' },
@@ -31,7 +31,7 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'text-sm font-bold tracking-widest transition-fast uppercase',
+                  'text-xs sm:text-sm font-bold tracking-widest transition-fast uppercase',
                   isActive(link.href)
                     ? 'text-primary border-b-2 border-primary pb-1'
                     : 'text-foreground hover:text-primary'
@@ -43,14 +43,14 @@ export default function Navigation() {
           </div>
 
           <a
-            href={`https://github.com/waisalam`}
+            href={`https://github.com/waislam`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground hover:text-primary transition-fast"
             aria-label="GitHub"
           >
             <svg
-              className="w-6 h-6"
+              className="w-5 h-5 md:w-6 md:h-6"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
