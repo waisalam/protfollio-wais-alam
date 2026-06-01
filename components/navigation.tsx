@@ -43,7 +43,7 @@ export default function Navigation() {
           </div>
 
           <a
-            href={`https://github.com/waislam`}
+            href={`https://github.com/waisalam`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground hover:text-primary transition-fast"
