@@ -6,6 +6,23 @@ import Navigation from '@/components/navigation'
 const projects = [
   {
     id: 1,
+    name: 'AI Data Analyzer',
+    description: 'Analyze data on the basis of data what you shared to AI.',
+    tags: ['Next js', 'TypeScript', 'Python', "RAG","OpenAI API"],
+    link: 'https://ai-data-analytics-geneereator.vercel.app/',
+    media: (
+      <div className="w-full h-96 bg-foreground/10 border-4 border-dashed border-foreground flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-lg font-bold tracking-wide mb-2">
+            <img src="ai.png" alt="" />
+          </p>
+          {/* <p className="text-sm text-foreground/60">Replace with your project media</p> */}
+        </div>
+      </div>
+    ),
+  },
+  {
+    id: 2,
     name: 'Resume Builder',
     description: 'It detects ATS score of your resume and resume building .',
     tags: ['Next.js', 'React', 'TypeScript', 'Python', 'Flask','OpenAI API'],
@@ -22,7 +39,7 @@ const projects = [
     ),
   },
   {
-    id: 2,
+    id: 3,
     name: 'Portfollio For startup',
     description: 'Build a portfollio for startup.',
     tags: ['Next.js', 'Prisma', 'Neon DB'],
@@ -39,7 +56,7 @@ const projects = [
     ),
   },
   {
-    id: 3,
+    id: 4,
     name: 'AI Chatbot',
     description: 'AI chatbot for coding assistant and more.',
     tags: ["NextJs","NEON DB",'Python', 'PyTorch', 'NumPy'],
@@ -56,7 +73,7 @@ const projects = [
     ),
   },
   {
-    id: 4,
+    id: 5,
     name: 'Spam Sms Detection',
     description: 'Detects spam sms.',
     tags: ['Next.js', 'React', 'TypeScript','Python', 'Flask','pandas', 'scikit-learn', 'NumPy'],
@@ -73,7 +90,7 @@ const projects = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     name: 'Project Name',
     description: 'Brief description of your project and what it does.',
     tags: ['React Native', 'TypeScript', 'Node.js'],
@@ -87,21 +104,21 @@ const projects = [
       </div>
     ),
   },
-  {
-    id: 6,
-    name: 'Project Name',
-    description: 'Brief description of your project and what it does.',
-    tags: ['Python', 'PyTorch', 'Next.js'],
-    link: '#',
-    media: (
-      <div className="w-full h-96 bg-foreground/10 border-4 border-dashed border-foreground flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-lg font-bold tracking-wide mb-2">ADD IMAGE/VIDEO</p>
-          <p className="text-sm text-foreground/60">Replace with your project media</p>
-        </div>
-      </div>
-    ),
-  },
+  // {
+  //   id: 7,
+  //   name: 'Project Name',
+  //   description: 'Brief description of your project and what it does.',
+  //   tags: ['Python', 'PyTorch', 'Next.js'],
+  //   link: '#',
+  //   media: (
+  //     <div className="w-full h-96 bg-foreground/10 border-4 border-dashed border-foreground flex items-center justify-center">
+  //       <div className="text-center">
+  //         <p className="text-lg font-bold tracking-wide mb-2">ADD IMAGE/VIDEO</p>
+  //         <p className="text-sm text-foreground/60">Replace with your project media</p>
+  //       </div>
+  //     </div>
+  //   ),
+  // },
 ]
 
 export default function Work() {
